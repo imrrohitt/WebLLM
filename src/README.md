@@ -1,1 +1,26 @@
-Update the README.md file to be more descriptive and user-friendly.
+# WebLLM Chat
+
+A production-oriented **browser-only** chat UI built with **React**, **Vite**, and [**WebLLM**](https://github.com/mlc-ai/web-llm) (`@mlc-ai/web-llm`). Inference runs **entirely on the client** using **WebGPU**; prompts and outputs do not leave the device.
+
+## Features
+
+- **Local inference** — no API keys, no backend server for the model.
+- **Web Worker** — LLM work is off the main thread so the UI stays responsive.
+- **OpenAI-style API** — `engine.chat.completions.create` with streaming responses.
+- **Load feedback** — elapsed time, phase hints, and weight-download progress (WebLLM reports % during shard fetch; WASM/WebGPU setup can take time at 0%).
+
+## Requirements
+
+| Requirement | Notes |
+---|--------|
+| **Model ID** | `src/webllmClient.js` — change `MODEL_ID` to another [bundled MLC model](https://mlc.ai/models). |
+| **System prompt / UX** | `src/ChatBot.jsx` |
+
+## Architecture
+
+```
+src/
+├── main.jsx          # React entry
+├── webllmClient.js   # CreateWebWorkerMLCEngine + model id
+├── worker.ts         # WebWorkerMLCEngineHandler (WebLLM worker entry)
+└── index.css         # Styles
