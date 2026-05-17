@@ -1,5 +1,3 @@
-Update the README.md file to be more descriptive and user-friendly.
-
 # WebLLM Chat
 
 A production-oriented **browser-only** chat UI built with **React**, **Vite**, and [**WebLLM**](https://github.com/mlc-ai/web-llm) (`@mlc-ai/web-llm`). Inference runs **entirely on the client** using **WebGPU**; prompts and outputs do not leave the device.
