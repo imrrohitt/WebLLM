@@ -1,0 +1,1 @@
+Updated README.md to be more descriptive and user-friendly.
