@@ -1,33 +1,5 @@
-:root {
-  font-family:
-    system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    Ubuntu,
-    Cantarell,
-    sans-serif;
-  line-height: 1.5;
-  color: #e8eaed;
-  background: #0f1115;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-
-.app {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding: 24px 16px 32px;
-}
-
+// Updated index.css
+/* Add styles to make the homepage chat box look nice */
 .chat-root {
   width: 100%;
   max-width: 640px;
@@ -35,19 +7,11 @@ body {
   flex-direction: column;
   gap: 12px;
 }
-
-.chat-header h1 {
-  margin: 0 0 8px;
-  font-size: 1.35rem;
-  font-weight: 600;
-}
-
 .status {
   margin: 0;
   font-size: 0.9rem;
   color: #9aa0a6;
 }
-
 .load-panel {
   margin-top: 10px;
   padding: 12px 14px;
@@ -55,14 +19,12 @@ body {
   background: #141820;
   border: 1px solid #2a2f3a;
 }
-
 .load-percent-row {
   display: flex;
   align-items: baseline;
   gap: 8px;
   margin-bottom: 10px;
 }
-
 .load-percent {
   font-size: 1.5rem;
   font-weight: 600;
@@ -70,28 +32,24 @@ body {
   color: #7cb3ff;
   line-height: 1;
 }
-
 .load-label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #80868b;
 }
-
 .progress-track {
   height: 8px;
   border-radius: 4px;
   background: #2a2f3a;
   overflow: hidden;
 }
-
 .progress-fill {
   height: 100%;
   border-radius: 4px;
   background: linear-gradient(90deg, #2563eb, #60a5fa);
   transition: width 0.15s ease-out;
 }
-
 .progress-detail {
   margin: 10px 0 0;
   font-size: 0.8rem;
@@ -99,7 +57,6 @@ body {
   word-break: break-word;
   line-height: 1.4;
 }
-
 .messages {
   flex: 1;
   min-height: 360px;
@@ -110,21 +67,17 @@ body {
   padding: 16px;
   background: #141820;
 }
-
 .empty {
   margin: 0;
   color: #80868b;
   font-size: 0.95rem;
 }
-
 .bubble {
   margin-bottom: 14px;
 }
-
 .bubble:last-child {
   margin-bottom: 0;
 }
-
 .label {
   display: block;
   font-size: 0.75rem;
@@ -133,35 +86,29 @@ body {
   color: #80868b;
   margin-bottom: 4px;
 }
-
 .bubble.user .label {
   text-align: right;
 }
-
 .bubble.user .text {
   margin-left: auto;
   background: #1e3a5f;
   border-radius: 12px 12px 4px 12px;
 }
-
 .bubble.assistant .text {
   background: #1e222a;
   border-radius: 12px 12px 12px 4px;
 }
-
 .text {
   padding: 10px 14px;
   max-width: 92%;
   white-space: pre-wrap;
   word-break: break-word;
 }
-
 .composer {
   display: flex;
   gap: 10px;
   align-items: stretch;
 }
-
 .composer input {
   flex: 1;
   padding: 12px 14px;
@@ -171,11 +118,9 @@ body {
   color: inherit;
   font-size: 1rem;
 }
-
 .composer input:disabled {
   opacity: 0.6;
 }
-
 .composer button {
   padding: 0 18px;
   border-radius: 10px;
@@ -185,16 +130,13 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-
 .composer button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 .footer {
   margin-top: 4px;
 }
-
 .footer small {
   color: #5f6368;
   font-size: 0.8rem;
