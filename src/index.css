@@ -1,11 +1,4 @@
-@media (max-width: 640px) {
-  .chat-root {
-    width: 100%;
-    max-width: 640px;
-    padding: 24px;
-    border-radius: 24px;
-  }
-}
+# This stylesheet contains the CSS rules for styling the homepage chat box. It includes properties such as padding, border-radius, and colors to create a modern and homely aesthetic.
 
 /* Add styles to make the homepage chat box look nice */
 .chat-root {
