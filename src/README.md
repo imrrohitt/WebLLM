@@ -24,4 +24,3 @@ src/
 ├── webllmClient.js   # CreateWebWorkerMLCEngine + model id
 ├── worker.ts         # WebWorkerMLCEngineHandler (WebLLM worker entry)
 └── index.css         # Styles
-```
