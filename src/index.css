@@ -1,59 +1,67 @@
-// Updated index.css
+@media (max-width: 640px) {
+  .chat-root {
+    width: 100%;
+    max-width: 640px;
+    padding: 24px;
+    border-radius: 24px;
+  }
+}
+
 /* Add styles to make the homepage chat box look nice */
 .chat-root {
   width: 100%;
   max-width: 640px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 .status {
   margin: 0;
-  font-size: 0.9rem;
-  color: #9aa0a6;
+  font-size: 1.5rem;
+  color: #fff;
 }
 .load-panel {
-  margin-top: 10px;
-  padding: 12px 14px;
-  border-radius: 10px;
-  background: #141820;
-  border: 1px solid #2a2f3a;
+  margin-top: 24px;
+  padding: 24px 32px;
+  border-radius: 24px;
+  background: #1b90d6;
+  border: 1px solid #2874ce;
 }
 .load-percent-row {
   display: flex;
   align-items: baseline;
-  gap: 8px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 .load-percent {
   font-size: 1.5rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
-  color: #7cb3ff;
+  color: #fff;
   line-height: 1;
 }
 .load-label {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #80868b;
+  color: #fff;
 }
 .progress-track {
-  height: 8px;
-  border-radius: 4px;
-  background: #2a2f3a;
+  height: 24px;
+  border-radius: 12px;
+  background: #2874ce;
   overflow: hidden;
 }
 .progress-fill {
   height: 100%;
-  border-radius: 4px;
+  border-radius: 12px;
   background: linear-gradient(90deg, #2563eb, #60a5fa);
   transition: width 0.15s ease-out;
 }
 .progress-detail {
-  margin: 10px 0 0;
+  margin: 24px 0 0;
   font-size: 0.8rem;
-  color: #9aa0a6;
+  color: #fff;
   word-break: break-word;
   line-height: 1.4;
 }
@@ -62,29 +70,29 @@
   min-height: 360px;
   max-height: min(55vh, 520px);
   overflow-y: auto;
-  border: 1px solid #2a2f3a;
-  border-radius: 12px;
+  border: 1px solid #2874ce;
+  border-radius: 24px;
   padding: 16px;
-  background: #141820;
+  background: #1b90d6;
 }
 .empty {
   margin: 0;
-  color: #80868b;
-  font-size: 0.95rem;
+  color: #fff;
+  font-size: 1.5rem;
 }
 .bubble {
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 }
 .bubble:last-child {
   margin-bottom: 0;
 }
 .label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #80868b;
-  margin-bottom: 4px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 .bubble.user .label {
   text-align: right;
@@ -113,8 +121,8 @@
   flex: 1;
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid #2a2f3a;
-  background: #141820;
+  border: 1px solid #2874ce;
+  background: #1b90d6;
   color: inherit;
   font-size: 1rem;
 }
@@ -135,7 +143,7 @@
   cursor: not-allowed;
 }
 .footer {
-  margin-top: 4px;
+  margin-top: 8px;
 }
 .footer small {
   color: #5f6368;
